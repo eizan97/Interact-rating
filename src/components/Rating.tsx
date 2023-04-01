@@ -14,14 +14,14 @@ export function Rating() {
   }
   return isSubmitted ? (
     <div className={styles["thank-you-panel"]}>
-      <img src="./images/illustration-thank-you.svg" />
+      <img src="../images/illustration-thank-you.svg" />
       <p className={styles.selected}>You selected {selectedRating} out of 5</p>
       <h1 className={styles.title}>Thank you!</h1>
       <p className={styles.description}>We appreciate you taking the time to give a rating. if you ever need more support, don't hesitate to get in touch!</p>
     </div>
   ) : (
     <form onSubmit={(handleFormSubmitted) => setIsSubmitted(true)} className={styles.panel}>
-      <img className={styles.star} src="./images/icon-star.svg" alt="star" />
+      <img className={styles.star} src="../images/icon-star.svg" alt="star" />
       <h1 className={styles.title}>how did we do?</h1>
       <p className={styles.description}>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       {/* {selectedRating} */}
